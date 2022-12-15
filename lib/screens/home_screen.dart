@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '/screens/sign_in_options_screen.dart';
+import 'signin_options_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   final String title;
@@ -29,10 +29,10 @@ void _showModalBottomSheet(BuildContext context) {
       borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
     ),
     builder: (context) => DraggableScrollableSheet(
-      initialChildSize: 0.4,
-      maxChildSize: 0.9,
-      minChildSize: 0.32,
       expand: false,
+      minChildSize: 0.32,
+      maxChildSize: 0.9,
+      initialChildSize: 0.4,
       builder: (context, scrollController) {
         return SingleChildScrollView(
           controller: scrollController,
